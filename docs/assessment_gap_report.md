@@ -17,7 +17,7 @@
 - **Real-audience results:** no participants were recruited and no owned-account posts were published. Run the 20-person preference test or the owned-account test and enter actual results.
 - **Asset approval:** media packages are prepared, but IncuBrix brand/claim review, actual scheduler entry, final destination confirmation, and platform previews need account-owner approval. The CSV slots are proposed; they are not live scheduled posts.
 - **Workbook:** the assessment-specific Excel workbook was not supplied. The project recreated a workbook with calendar, self-check, audit, evidence, targets, tools, and blank participant-input sheets. Transfer the verified answers into the official workbook if IncuBrix provides one.
-- **Repository access:** this folder has no Git remote/reviewer permissions configured. Create or identify the private repository and grant reviewer access.
+- **Repository access:** the project has been pushed to the provided GitHub repository. Confirm it meets the assessment's private-repository requirement and grant reviewer access.
 - **Reviewer videos:** product walkthrough and technical demo recordings were not created or uploaded; no share links exist. Follow `demo_script.md`.
 - **Python stack preference:** the runnable implementation uses Node.js/SQLite and React/Vite, not FastAPI/Pydantic/SQLAlchemy. This deviation is documented; move to the requested Python stack only if the evaluator requires strict stack conformity.
 

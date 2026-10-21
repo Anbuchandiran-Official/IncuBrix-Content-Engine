@@ -13,5 +13,6 @@ Checked on 22 October 2026.
 | Calendar completeness | 30 rows; 30 UTMs; 30 proposed slots; all referenced media paths exist. |
 | Media package | 14 WebM videos; 44 SVG media files (seven five-slide carousels, two standalone graphics, seven post cards); 30 editable Markdown sources. |
 | Workbook structure | `assessment_workbook.xlsx` contains 8 sheets; all XML parts parse successfully. |
+| Repository publication | Project pushed to the provided GitHub `main` branch. `.env`, Firebase admin credentials, and local SQLite files are ignored and excluded. |
 
 The short videos are silent text-on-screen animations, not product walkthrough recordings. No social posts were published and no audience-test participants were recruited.

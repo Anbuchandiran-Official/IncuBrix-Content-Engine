@@ -57,7 +57,7 @@ Download the curated handoff archive: [`output/IncuBrix_Submission_Package.zip`]
 | Workbook | Project workbook created; real-world inputs remain pending and the official Excel template was not supplied | [Open workbook](assessment_workbook.xlsx) |
 | `calendar.csv` | 30-row calendar with UTMs, proposed slots, and media/source paths; live export is in **Export Center** | [Calendar CSV](content/calendar.csv) |
 | README | Included | This file |
-| Repository access | No Git remote is configured | Add the repository URL before submission |
+| Repository access | Project pushed to the provided GitHub repository; confirm visibility and grant reviewer access | [IncuBrix Content Engine on GitHub](https://github.com/Anbuchandiran-Official/IncuBrix-Content-Engine) |
 | Two reviewer video links | Not recorded or uploaded | Use [demo script](docs/demo_script.md) |
 
 See the [verification record](docs/verification.md) for test results and the [assessment gap report](docs/assessment_gap_report.md) for remaining work. Do not present public-site research as direct product use or fill test results with estimates.
