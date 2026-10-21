@@ -1,0 +1,11 @@
+claim,evidence_source,date_checked,relevant_asset_ids,status
+"Public product-surface observations","docs/product_research.md; https://incubrix.com/",2026-10-22,,"5 public-site observations; direct product use still pending"
+"Official account identity and follower snapshot","docs/account_audit.md; https://www.linkedin.com/company/incubrix/; https://incubrix.com/",2026-10-22,,"LinkedIn 1221 displayed followers; Instagram and Facebook handles linked by official site; other metrics incomplete"
+"Five peer follower snapshots","docs/account_audit.md; cited public LinkedIn company pages",2026-10-22,,"Five peers audited; post engagement metrics unavailable"
+"Three social opportunities",docs/product_research.md,2026-10-22,,"Evidence-informed hypotheses; audience validation pending"
+"30 asset packages and calendar","content/calendar.csv; content/final_assets/; content/assets/",2026-10-22,"IB27-001 to IB27-030","30 packages with media paths; owner approval and live scheduling pending"
+"Video and carousel media count","docs/asset_quality_checklist.md; content/final_assets/",2026-10-22,"IB27-001 to IB27-030","14 silent short videos; seven five-panel carousels; two graphics; seven post cards"
+"Live demo generation",docs/verification.md,2026-10-22,,"HTTP 201; 10 generated assets in demo mode"
+"Test and production build",docs/verification.md,2026-10-22,,"10 automated tests passed; production build passed"
+"Real-audience test",docs/audience_test.md,2026-10-22,,"NOT RUN; zero participant responses"
+"Completed product demo evidence",docs/research_log.md,2026-10-22,,"Direct product observations and screenshots still required"

@@ -1,0 +1,19 @@
+node_modules/
+tools/*.exe
+tools/*.zip
+tools/.assessment-render-profile*/
+tools/preview-profile*/
+tools/asset-preview.png
+tools/cloudflared.*.log
+dist/
+.env
+*firebase-adminsdk*.json
+data/*.sqlite
+data/uploads/
+exports/*
+!exports/.gitkeep
+npm-debug.log*
+
+# Local SQLite sidecars and generated preview
+data/*.sqlite-*
+.dist/
