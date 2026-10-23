@@ -13,7 +13,5 @@ services:
         value: demo
       - key: DATABASE_PATH
         value: /tmp/incrubrix.sqlite
-      - key: BASIC_AUTH_USERNAME
-        sync: false
-      - key: BASIC_AUTH_PASSWORD
-        sync: false
+      - key: PUBLIC_DEMO
+        value: "true"

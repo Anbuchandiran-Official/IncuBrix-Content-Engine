@@ -10,7 +10,7 @@ This is a temporary Cloudflare Quick Tunnel to an isolated demo database, with F
 
 ## Always-on hosted deployment
 
-The project includes a Render Blueprint for an authenticated **free demo** deployment. See [the deployment guide](docs/deployment.md). It can run while this computer is off, but Render free services may sleep, and their temporary SQLite data can be lost on restart or redeploy. Do not save important data. A paid service with persistent storage is needed for reliable availability and retained data; the Blueprint does not create a service automatically.
+The project includes a Render Blueprint for a **public free demo** deployment. See [the deployment guide](docs/deployment.md). Anyone with the URL can use and modify its demo data. Render free services may sleep, and temporary SQLite data can be lost on restart or redeploy; do not save private or important data. A paid service with persistent storage is needed for reliable availability and retained data; the Blueprint does not create a service automatically.
 
 ## Run on your computer
 
