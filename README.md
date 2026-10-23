@@ -10,7 +10,7 @@ This is a temporary Cloudflare Quick Tunnel to an isolated demo database, with F
 
 ## Always-on hosted deployment
 
-The project includes a Render Blueprint for an authenticated, persistent deployment. See [the deployment guide](docs/deployment.md). A paid web service and persistent disk are required for the app to stay available when this computer is off and to retain its SQLite data. Review Render's current price before provisioning; the repository does not create or pay for a hosted service automatically.
+The project includes a Render Blueprint for an authenticated **free demo** deployment. See [the deployment guide](docs/deployment.md). It can run while this computer is off, but Render free services may sleep, and their temporary SQLite data can be lost on restart or redeploy. Do not save important data. A paid service with persistent storage is needed for reliable availability and retained data; the Blueprint does not create a service automatically.
 
 ## Run on your computer
 

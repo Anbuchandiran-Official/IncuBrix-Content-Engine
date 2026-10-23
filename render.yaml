@@ -2,7 +2,7 @@ services:
   - type: web
     name: incrubrix-content-engine
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm ci && npm run build
     startCommand: node backend/app/server.mjs
     healthCheckPath: /api/health
@@ -12,12 +12,8 @@ services:
       - key: AI_PROVIDER
         value: demo
       - key: DATABASE_PATH
-        value: /var/data/incrubrix.sqlite
+        value: /tmp/incrubrix.sqlite
       - key: BASIC_AUTH_USERNAME
         sync: false
       - key: BASIC_AUTH_PASSWORD
         sync: false
-    disk:
-      name: incrubrix-data
-      mountPath: /var/data
-      sizeGB: 1
