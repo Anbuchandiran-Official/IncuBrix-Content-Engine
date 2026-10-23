@@ -4,7 +4,7 @@
 
 ## Run a preference test
 
-Recruit at least 20 consenting adults who create content, edit content, or work on a small creator team in the target markets. Share the three concepts below in a randomized order. Collect no names or sensitive personal information. Record consent, eligibility, date, preference, action intent, and a short anonymized reason.
+Administer the three concepts below to at least 20 consenting, eligible adults in your existing panel in randomized order. Collect no names or sensitive personal information. Record consent, eligibility, date, preference, action intent, and a short anonymized reason.
 
 ### Test stimuli
 
@@ -24,7 +24,8 @@ These are educational concepts, not IncuBrix product demonstrations.
 
 ### Report results honestly
 
-Record recruitment channel, dates, eligibility, sample size, and response counts. Report each concept’s count and proportion using the eligible response denominator. Describe selection bias and missing answers. Do not claim statistical representativeness or compare against a benchmark unless the benchmark and method are cited.
+Use the existing panel only; do not contact creators or brands for this assessment. Record channel, dates, eligibility, sample size, response counts, and consent. Keep answers anonymous: do not collect names, contact details, or identifying information. Report each concept's count and proportion using the eligible, consenting response denominator. Describe selection bias and missing answers. Do not claim statistical representativeness or compare against a benchmark unless the benchmark and method are cited.
+
 
 ## Results sheet
 
@@ -38,6 +39,8 @@ Record recruitment channel, dates, eligibility, sample size, and response counts
 | Save/share/click intent counts | No data |
 | Limitations | Test has not been fielded. |
 
+The workbook's `AudienceTest` sheet has 20 anonymous response rows. Mark consent and target-audience eligibility separately; only eligible, consenting responses with a selected concept count in the sample-size formula. The panel owner administers the test and enters anonymized results.
+
 ## Alternative owned-account test
 
-If the preference test cannot be run, publish at least 10 prepared assets over 5 or more days on an account you own. Do not publish from an IncuBrix account without written authorization. Save platform analytics at 24 hours and 7 days, including impressions/reach, views, interactions, link clicks, and attributed sign-ups. The alternative has not been run.
+If the preference test cannot be run, publish at least 10 prepared assets over 5 or more days on an account you own. Never publish from an official IncuBrix account. Save platform analytics at 24 hours and 7 days, including impressions/reach, views, interactions, link clicks, and attributed sign-ups. The alternative has not been run.

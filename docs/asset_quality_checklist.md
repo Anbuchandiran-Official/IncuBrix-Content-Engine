@@ -10,6 +10,8 @@
 - [x] No unverified IncuBrix feature claims in the prepared social captions.
 - [x] UTMs use the official IncuBrix home page and include per-asset IDs.
 
+Local recheck on 23 October 2026 confirmed that all 30 calendar rows have the required planning fields and every referenced final-media and editable-source file exists. This confirms package integrity only; it does not count as the required randomized 20-item quality audit or make assets owner-approved and ready to publish.
+
 ## Final owner checks still required
 
 - [ ] IncuBrix owner approves tone, logo/brand use, public destination, and each proposed date/time.

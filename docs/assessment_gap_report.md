@@ -27,3 +27,5 @@
 - Product capability statements in the research file are attributed to public IncuBrix marketing pages; they are not presented as firsthand product verification.
 - The generated video files are silent text-on-screen motion graphics, not footage of the IncuBrix product or creator testimonials.
 - No social account was connected, no post was published, no participant response was invented, and no product credentials were provided.
+
+For the exact owner inputs needed to close these gaps, see [Owner TODO](owner_todo.md).

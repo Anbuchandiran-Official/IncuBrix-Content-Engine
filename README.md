@@ -4,17 +4,17 @@ A small workspace for turning long-form material into social content drafts, rev
 
 ## Open the demo
 
-[Open the live demo](https://birmingham-reward-dublin-know.trycloudflare.com) — no login required.
+[Open the live demo](https://compatibility-pmid-hold-exists.trycloudflare.com) — no login required.
 
-This is a temporary Cloudflare tunnel. It works only while the app and tunnel are running, and its URL can change after a restart. Anyone with the link can use the demo, so do not enter private information.
+This is a temporary Cloudflare Quick Tunnel to an isolated demo database, with Firebase disabled. It works only while this computer and tunnel are running, and its URL can change after a restart. Anyone with the link can use the demo, so do not enter private information. This is a public demo, not a permanent production deployment.
 
 ## Run on your computer
 
 You need Node.js 22.5+ and npm. In PowerShell, from this folder:
 
 ```powershell
-npm install
-npm run dev
+npm.cmd install
+npm.cmd run dev
 ```
 
 Open `http://127.0.0.1:5173`. Stop with Ctrl+C. The app uses demo generation by default; no AI key is needed.
@@ -22,8 +22,8 @@ Open `http://127.0.0.1:5173`. Stop with Ctrl+C. The app uses demo generation by 
 Run the checks with:
 
 ```powershell
-npm test
-npm run build
+npm.cmd test
+npm.cmd run build
 ```
 
 ## Use the app
@@ -61,6 +61,8 @@ Download the curated handoff archive: [`output/IncuBrix_Submission_Package.zip`]
 | Two reviewer video links | Not recorded or uploaded | Use [demo script](docs/demo_script.md) |
 
 See the [verification record](docs/verification.md) for test results and the [assessment gap report](docs/assessment_gap_report.md) for remaining work. Do not present public-site research as direct product use or fill test results with estimates.
+
+For the shortest actionable list of owner inputs needed to finish the assessment, see [Owner TODO](docs/owner_todo.md).
 
 ## More
 
