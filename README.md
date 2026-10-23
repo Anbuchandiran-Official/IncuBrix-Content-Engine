@@ -8,6 +8,10 @@ A small workspace for turning long-form material into social content drafts, rev
 
 This is a temporary Cloudflare Quick Tunnel to an isolated demo database, with Firebase disabled. It works only while this computer and tunnel are running, and its URL can change after a restart. Anyone with the link can use the demo, so do not enter private information. This is a public demo, not a permanent production deployment.
 
+## Always-on hosted deployment
+
+The project includes a Render Blueprint for an authenticated, persistent deployment. See [the deployment guide](docs/deployment.md). A paid web service and persistent disk are required for the app to stay available when this computer is off and to retain its SQLite data. Review Render's current price before provisioning; the repository does not create or pay for a hosted service automatically.
+
 ## Run on your computer
 
 You need Node.js 22.5+ and npm. In PowerShell, from this folder:
