@@ -10,8 +10,6 @@ import { getFirebaseStatus, initializeFirebaseSync, flushFirebaseSync } from './
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 const PORT=Number(process.env.PORT||8000), HOST=process.env.HOST||'127.0.0.1', ORIGIN=process.env.APP_ORIGIN||'http://127.0.0.1:5173';
-const BASIC_AUTH_USERNAME=process.env.BASIC_AUTH_USERNAME||'', BASIC_AUTH_PASSWORD=process.env.BASIC_AUTH_PASSWORD||'';
-const PUBLIC_DEMO=process.env.PUBLIC_DEMO==='true';
 const MAX_BODY=2*1024*1024;
 const MIME={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.json':'application/json; charset=utf-8'};
 
@@ -42,12 +40,6 @@ const openapi={openapi:'3.1.0',info:{title:'IncuBrix Content Engine API',version
 
 export async function handler(req,res){
  const url=new URL(req.url,`http://${req.headers.host||'localhost'}`), pathname=url.pathname;
- if(pathname!=='/api/health'&&!PUBLIC_DEMO&&BASIC_AUTH_USERNAME&&BASIC_AUTH_PASSWORD){
-  const header=req.headers.authorization||'',match=header.match(/^Basic\s+(.+)$/i);
-  let valid=false;
-  if(match){try{const [username,...passwordParts]=Buffer.from(match[1],'base64').toString().split(':');valid=username===BASIC_AUTH_USERNAME&&passwordParts.join(':')===BASIC_AUTH_PASSWORD;}catch{}}
-  if(!valid){res.writeHead(401,{'www-authenticate':'Basic realm="IncuBrix Content Engine", charset="UTF-8"','cache-control':'no-store'});return res.end('Authentication required.');}
- }
  const allowedOrigins=new Set([ORIGIN,`http://127.0.0.1:${PORT}`,`http://localhost:${PORT}`]);
  if(req.headers.origin){
   let sameOrigin=false;
@@ -121,7 +113,7 @@ export async function handler(req,res){
 
 if(process.argv[1]===fileURLToPath(import.meta.url)){
  const server=httpServer(handler);
- const start=async()=>{if(HOST!=='127.0.0.1'&&HOST!=='localhost'&&!PUBLIC_DEMO&&(!BASIC_AUTH_USERNAME||!BASIC_AUTH_PASSWORD))throw new Error('Set BASIC_AUTH_USERNAME and BASIC_AUTH_PASSWORD before exposing this server beyond localhost.');const firebase=await initializeFirebaseSync(db);server.listen(PORT,HOST,()=>console.log(`IncuBrix Content Engine listening on http://${HOST}:${PORT} (${process.env.AI_PROVIDER||'demo'} mode; ${PUBLIC_DEMO?'public demo':'authenticated'}; Firebase ${firebase.connected?'connected':'not connected'})`));};
+ const start=async()=>{const firebase=await initializeFirebaseSync(db);server.listen(PORT,HOST,()=>console.log(`IncuBrix Content Engine listening on http://${HOST}:${PORT} (${process.env.AI_PROVIDER||'demo'} mode; public access; Firebase ${firebase.connected?'connected':'not connected'})`));};
  for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{server.close(async()=>{await flushFirebaseSync();db.close();process.exit(0);});});
  start().catch(error=>{console.error('Server startup failed:',error.message);process.exitCode=1;});
 }
